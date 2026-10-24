@@ -1,0 +1,7 @@
+{
+  "I01": "train", "I02": "train", "I03": "train",
+  "I04": "train", "I05": "train", "I06": "train",
+  "I07": "val",
+  "I08": "test",  "I09": "test",  "I10": "test",
+  "D01": "test",  "D02": "test",  "D03": "test",  "D04": "test"
+}

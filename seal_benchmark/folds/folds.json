@@ -1,0 +1,97 @@
+{
+  "fold0": {
+    "test_identical": [
+      "I09",
+      "I08"
+    ],
+    "val": [
+      "I04"
+    ],
+    "train": [
+      "I01",
+      "I010",
+      "I02",
+      "I03",
+      "I05",
+      "I06",
+      "I07"
+    ],
+    "test_different": []
+  },
+  "fold1": {
+    "test_identical": [
+      "I04",
+      "I02"
+    ],
+    "val": [
+      "I03"
+    ],
+    "train": [
+      "I01",
+      "I010",
+      "I05",
+      "I06",
+      "I07",
+      "I08",
+      "I09"
+    ],
+    "test_different": []
+  },
+  "fold2": {
+    "test_identical": [
+      "I03",
+      "I01"
+    ],
+    "val": [
+      "I06"
+    ],
+    "train": [
+      "I010",
+      "I02",
+      "I04",
+      "I05",
+      "I07",
+      "I08",
+      "I09"
+    ],
+    "test_different": []
+  },
+  "fold3": {
+    "test_identical": [
+      "I06",
+      "I010"
+    ],
+    "val": [
+      "I09"
+    ],
+    "train": [
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I07",
+      "I08"
+    ],
+    "test_different": []
+  },
+  "fold4": {
+    "test_identical": [
+      "I07",
+      "I05"
+    ],
+    "val": [
+      "I09"
+    ],
+    "train": [
+      "I01",
+      "I010",
+      "I02",
+      "I03",
+      "I04",
+      "I06",
+      "I08"
+    ],
+    "test_different": []
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "args": {
+    "model": "efficientnet_b0",
+    "seed": 0,
+    "manifest": "folds\\fold4\\manifest.csv",
+    "images": "dataset/images",
+    "out": "runs_kfold\\fold4",
+    "device": "cpu",
+    "batch_size": 16,
+    "stage1_epochs": 4,
+    "stage2_epochs": 12,
+    "head_lr": 0.001,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "patience": 3,
+    "drop_rate": 0.2,
+    "no_pretrained": false,
+    "overwrite": true
+  },
+  "img_size": 224,
+  "class_names": [
+    "intact",
+    "tampered"
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "pretrained_weights": {
+    "architecture": "efficientnet_b0",
+    "tag": "ra_in1k",
+    "hf_hub_id": "timm/efficientnet_b0.ra_in1k",
+    "url": "https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/efficientnet_b0_ra-3dd342df.pth"
+  },
+  "manifest_sha256": "29d3d4485f79467ed4662c20c62293a97f480865c77599dab3c23ec8510844c0",
+  "train_boxes": [
+    "I01",
+    "I010",
+    "I02",
+    "I03",
+    "I04",
+    "I06",
+    "I08"
+  ],
+  "val_boxes": [
+    "I09"
+  ],
+  "n_train": 82,
+  "n_val": 12,
+  "train_label_counts": {
+    "intact": 42,
+    "tampered": 40
+  },
+  "best_checkpoint": {
+    "stage_epoch": [
+      2,
+      4
+    ],
+    "val_loss": 1.4611464738845825
+  },
+  "env": {
+    "python": "3.11.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "pillow": "11.2.1",
+    "cuda_available": false,
+    "git_commit": null
+  }
+}

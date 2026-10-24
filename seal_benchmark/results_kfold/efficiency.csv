@@ -1,0 +1,3 @@
+model,params_millions,state_dict_mb,cpu_latency_ms_mean,cpu_latency_ms_std
+efficientnet_b0,4.01011,16.329455,42.12683600327,1.9358874202941003
+mobilenetv3_small_100,1.519906,6.208919,9.435757803265005,0.7452021385020924

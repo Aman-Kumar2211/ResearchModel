@@ -1,0 +1,7 @@
+{
+  "params_millions": 1.519906,
+  "state_dict_mb": 6.208919,
+  "cpu_latency_ms_mean": 9.218850997276604,
+  "cpu_latency_ms_std": 0.46312259440994985,
+  "note": "single image, 1 CPU thread; timings vary between machines and runs"
+}

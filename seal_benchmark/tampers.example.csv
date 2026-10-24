@@ -1,0 +1,15 @@
+box,tamper
+I01,peel
+I02,peel
+I03,cut
+I04,cut
+I05,restuck
+I06,disguise
+I07,disguise
+I08,peel
+I09,cut
+I10,restuck
+D01,peel
+D02,cut
+D03,restuck
+D04,disguise

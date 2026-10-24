@@ -1,0 +1,78 @@
+{
+  "args": {
+    "model": "mobilenetv3_small_100",
+    "seed": 0,
+    "manifest": "folds\\fold0\\manifest.csv",
+    "images": "dataset/images",
+    "out": "runs_kfold\\fold0",
+    "device": "cpu",
+    "batch_size": 16,
+    "stage1_epochs": 4,
+    "stage2_epochs": 12,
+    "head_lr": 0.001,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "patience": 3,
+    "drop_rate": 0.2,
+    "no_pretrained": false,
+    "overwrite": true
+  },
+  "img_size": 224,
+  "class_names": [
+    "intact",
+    "tampered"
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "pretrained_weights": {
+    "architecture": "mobilenetv3_small_100",
+    "tag": "lamb_in1k",
+    "hf_hub_id": "timm/mobilenetv3_small_100.lamb_in1k",
+    "url": "https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_100_lamb-266a294c.pth"
+  },
+  "manifest_sha256": "a7f4d5a9ec801938b08883265c92adf19fc4bd6663694bfc52a2f37ce8551b62",
+  "train_boxes": [
+    "I01",
+    "I010",
+    "I02",
+    "I03",
+    "I05",
+    "I06",
+    "I07"
+  ],
+  "val_boxes": [
+    "I04"
+  ],
+  "n_train": 82,
+  "n_val": 12,
+  "train_label_counts": {
+    "intact": 42,
+    "tampered": 40
+  },
+  "best_checkpoint": {
+    "stage_epoch": [
+      2,
+      6
+    ],
+    "val_loss": 0.12027108669281006
+  },
+  "env": {
+    "python": "3.11.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "pillow": "11.2.1",
+    "cuda_available": false,
+    "git_commit": null
+  }
+}
